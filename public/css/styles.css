@@ -1,0 +1,161 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.logo {
+    max-width: 150px;
+    top: 10px;
+    left: 20px;
+}
+
+#mensagem{
+    margin-bottom:-20px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+#servicos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.servicos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.servico-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.servico-icon {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+.servico-item h3 {
+    margin-top: 0;
+    color: #007BFF;
+}
+
+.servico-item p {
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.voltar {
+    display: block;
+    margin: 0 0 -26px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.voltar:hover {
+    background-color: #0056b3;
+}
+.crede {
+    display: block;
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.crede:hover {
+    background-color: #0056b3;
+}
+
+.mostrar-credenciais {
+    display: block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.mostrar-credenciais:hover {
+    background-color: #218838;
+}
+
+#credenciais {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .servicos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

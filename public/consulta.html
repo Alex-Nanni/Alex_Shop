@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta - Oficina Mecânica</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="js/index.js"></script>   
+    <script type="module" src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <button class="voltar" onclick="window.location.href='index1.html'">Voltar</button>
+        <h2>Consulta de Serviços</h2>
+    </header>
+
+    <main>
+        <form id="consultaForm">
+            <label for="consultaNome">Consultar por Nome:</label>
+            <input type="text" id="consultaNome" name="consultaNome">
+
+            <label for="consultaPreco">Consultar por Preço:</label>
+            <input type="number" id="consultaPreco" name="consultaPreco">
+
+            <label for="consultaData">Consultar por Data de Inserção:</label>
+            <input type="date" id="consultaData" name="consultaData">
+
+            <button type="submit">Consultar</button>
+        </form>
+
+        <h3>Resultado da Consulta:</h3>
+        <div id="resultadoConsulta"></div>
+
+        <section id="adminActions" style="display: none;">
+            <h2>Gerenciamento de Serviços</h2>
+            <form id="adminForm">
+                <label for="produtoNome">Nome do Serviço:</label>
+                <input type="text" id="produtoNome" name="produtoNome" required>
+        
+                <label for="produtoPreco">Preço:</label>
+                <input type="number" id="produtoPreco" name="produtoPreco" required>
+        
+                <button type="submit">Adicionar Produto</button>
+            </form>
+        
+            <h3>Serviços Existentes:</h3>
+            <ul id="produtoLista">
+                <!-- Produtos preenchidos dinamicamente pelo JavaScript -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Oficina Mecânica. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

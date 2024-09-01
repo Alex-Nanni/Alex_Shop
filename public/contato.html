@@ -1,0 +1,36 @@
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Oficina Mecânica</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="js/index.js"></script>   
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/contato.js"></script>
+    <script type="module" src="functions/js/index.js"></script>    
+</head>
+<body>
+    <header>
+        <button class="voltar" onclick="window.location.href='index1.html'">Voltar</button>
+        <h2>Contato</h2>
+    </header>
+    <main>
+        <form id="contatoForm">
+            <label for="contatoNome">Nome:</label>
+            <input type="text" id="contatoNome" name="contatoNome" required>
+
+            <label for="contatoEmail">E-mail:</label>
+            <input type="email" id="contatoEmail" name="contatoEmail" required>
+
+            <label for="contatoMensagem">Mensagem:</label>
+            <textarea id="contatoMensagem" name="contatoMensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Oficina Mecânica. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

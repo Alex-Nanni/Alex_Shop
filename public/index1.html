@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficina Mecânica</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="js/index.js"></script>   
+    <script type="module" src="js/script.js"></script>  
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="img/logo.png" alt="Logo da Oficina Mecânica" class="logo">
+            <h1>Bem-vindo ao Alex Shop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index1.html">Início</a></li>
+                <li><a href="consulta.html">Consulta</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="servicos-container">
+                <!-- Conteúdo exclusivo para usuários admin -->
+                <div id="adminServices" style="display: none;">
+                    <h3>Administração</h3>
+                    <div class="servico-item">
+                        <a href="consulta.html">Gerenciar Serviços</a>
+                    </div>
+                </div>
+                
+                <!-- Conteúdo acessível para todos -->
+                <div class="servico-item">
+                    <img src="img/icone1.png" alt="Troca de Óleo" class="servico-icon">
+                    <h3>Troca de Óleo</h3>
+                    <p>Manutenção essencial para o bom funcionamento do motor.</p>
+                </div>
+                <div class="servico-item">
+                    <img src="img/icone2.png" alt="Revisão Completa" class="servico-icon">
+                    <h3>Revisão Completa</h3>
+                    <p>Verificação geral para garantir a segurança do seu veículo.</p>
+                </div>
+                <div class="servico-item">
+                    <img src="img/icone3.png" alt="Manutenção de Freios" class="servico-icon">
+                    <h3>Manutenção de Freios</h3>
+                    <p>Serviço fundamental para a sua segurança e a dos outros.</p>
+                </div>
+                <div class="servico-item">
+                    <img src="img/icone4.png" alt="Alinhamento" class="servico-icon">
+                    <h3>Alinhamento</h3>
+                    <p>Garanta o alinhamento correto das rodas para uma direção segura.</p>
+                </div>
+                <div class="servico-item">
+                    <img src="img/icone5.png" alt="Balanceamento" class="servico-icon">
+                    <h3>Balanceamento</h3>
+                    <p>Evite vibrações e desgaste irregular dos pneus.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Oficina Mecânica. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Verifica o papel do usuário e exibe se for admin
+        document.addEventListener("DOMContentLoaded", function () {
+            const userRole = localStorage.getItem("userRole");
+            if (userRole === "admin") {
+                document.getElementById("adminServices").style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>
